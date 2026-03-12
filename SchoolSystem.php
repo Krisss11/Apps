@@ -40,3 +40,4 @@ if ($stmt->execute([$firstName, $lastName, $class, $grade, $email])) {
     echo "<div class='result'>Успешно добавен нов ученик!</div>";
 }
 
+

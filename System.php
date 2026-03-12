@@ -1,15 +1,6 @@
 <?php
-$host = 'localhost';
-$db   = 'school_system';
-$user = 'root'; // По подразбиране в XAMPP
-$pass = '';     // По подразбиране в XAMPP е празно
-$charset = 'utf8mb4';
-
-$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
-$options = [
-    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-];
+// reuse the shared connection helper
+require_once __DIR__ . '/db.php';
 ?>
 
 <!DOCTYPE html>
